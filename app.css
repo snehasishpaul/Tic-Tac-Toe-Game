@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(31, 31, 102);
+    height: 50px;
+    color: white;
+    font-family: "Baloo Bhai 2", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    color: white;
+    font-size: 3vw;
+}
+
+nav ul li {
+    font-size: 4vw;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    min-height: calc(100vh - 50px);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+    border: 2px solid black;
+    font-family: "Baloo Bhai 2", cursive;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(43, 43, 140);
+    cursor: pointer;
+}
+
+.gameStatus {
+    font-family: "Baloo Bhai 2", cursive;
+    padding: 0 20px;
+}
+
+.headingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameStatus h4 {
+    margin-top: 10px;
+    font-size: larger;
+    display: inline-block;
+}
+
+.gameStatus button {
+    font-family: "Baloo Bhai 2", cursive;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+
+.gameStatus button:hover {
+    cursor: pointer;
+    background-color: rgb(43, 43, 140);
+}
+
+.imgContainer img {
+    display: none;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+.bb-0 {
+    border-bottom: 0;
+}
+.br-0 {
+    border-right: 0;
+}
+.bl-0 {
+    border-left: 0;
+}
+
+@media (max-width: 900px) {
+    .gameContainer {
+        flex-direction: column;
+    }
+
+    .gameStatus {
+        margin-top: 50px;
+    }
+    .gameStatus h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    .gameStatus h4 {
+        font-size: 4vw;
+        /* margin-left: 30 px; */
+    }
+    .container {
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 16vw);
+        grid-template-rows: repeat(3, 16vw);
+    }
+}
